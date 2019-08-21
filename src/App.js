@@ -5,6 +5,11 @@ import Home from './pages/Home';
 import Photo from './pages/Photo';
 import Gallery from './pages/Gallery';
 
+import Menu from './components/Menu';
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
+
 class App extends React.Component {
 
     constructor(props) {
@@ -14,11 +19,14 @@ class App extends React.Component {
 
     render() {
         return (
-			<Router>
-				<Home path="/"/>
-				<Photo path="/p/:id"/>
-				<Gallery path="/g/:id"/>
-			</Router>
+            <div>
+                <Menu history={history}/>
+                <Router history={history}>
+                    <Home exact path="/"/>
+                    <Photo path="/p/:id"/>
+                    <Gallery path="/g/:id"/>
+                </Router>
+            </div>
 		);
     }
 }

@@ -1,23 +1,2 @@
 .page.home {
-    .photos-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-        .photo-container {
-            width: 500px;
-            margin: 15px 0;
-
-            a {
-                font-size: 2em;
-                text-decoration: none;
-                color: #23282d;
-            }
-
-            img {
-                margin-top: 5px;
-                width: 500px;
-            }
-        }
-    }
 }

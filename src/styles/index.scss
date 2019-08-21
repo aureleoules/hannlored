@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
 html, body, #root {
     padding: 0;
@@ -32,4 +33,46 @@ html, body, #root {
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
     animation-fill-mode: both;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.photos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .photo-container {
+        width: 500px;
+        margin: 50px 0;
+        opacity: 0;
+
+        a {
+            font-size: 2em;
+            text-decoration: none;
+            color: #23282d;
+        }
+
+        &.visible {
+            img {
+                display: block
+            }
+        }
+
+        img {
+            margin-top: 5px;
+            width: 500px;
+            height: 500px;
+            display: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.fadein {
+    animation: fadein 1s;
 }

@@ -1,0 +1,17 @@
+.page.photo {
+    display: flex;
+    justify-content: center;
+    .photo {
+        width: 500px;
+        padding-top: 50px;
+        img {
+            width: 100%;
+        }
+
+        p {
+            max-width: 100%;
+            color: #3c3a3a;
+            text-align: justify;
+        }
+    }
+}
