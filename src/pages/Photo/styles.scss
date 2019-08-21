@@ -2,6 +2,12 @@
     display: flex;
     justify-content: center;
     .photo {
+
+        @media screen and(max-width: 550px) {
+            width: 90%;
+            padding-top: 0;
+        }
+
         width: 500px;
         padding-top: 50px;
         img {

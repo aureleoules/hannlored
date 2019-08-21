@@ -12,7 +12,6 @@ class Photo extends React.Component {
             content: "",
             fetched: false
         };
-        console.log(props);
 
         this.fetchPhoto();
     }

@@ -51,6 +51,19 @@ html, body, #root {
         margin: 50px 0;
         opacity: 0;
 
+        @media screen and (max-width: 1000px) {
+            margin: 10px 0;
+        }
+
+        @media screen and(max-width: 550px) {
+            width: 95%;
+            img {
+                margin: 10px 0;
+                width: 100%!important;
+                height: auto!important;
+            }
+        }
+
         a {
             font-size: 2em;
             text-decoration: none;
