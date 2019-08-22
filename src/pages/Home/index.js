@@ -35,9 +35,9 @@ class Home extends React.Component {
                 {this.state.fetched && <div class="photos-container">
                     {this.state.photos.map((p, i) => (
                         <OnVisible onChange={v => console.log(v)} className="photo-container" visibleClassName={"slide-top visible"} percent={15}>
-                            <Link href={"/p/" + p.id}>
+                            {/* <Link href={"/p/" + p.id}>
                                 {p.title}
-                            </Link>
+                            </Link> */}
                             <img alt={p.title} onClick={() => this._goToPost(p)} src={p.url}/>
                         </OnVisible>
                         )

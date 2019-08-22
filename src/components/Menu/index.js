@@ -5,6 +5,7 @@ import './styles.scss';
 import {Link} from 'preact-router';
 
 import axios from 'axios';
+import Logo from '../../assets/hannlorelogo.png';
 
 class Menu extends React.Component {
     
@@ -38,7 +39,9 @@ class Menu extends React.Component {
     render() {
         return (
             <div class="menu">
-                <Link class="logo" href="/">Hann Lore. D</Link>
+                <Link class="logo" href="/">
+                    <img src={Logo} width="150"/>
+                </Link>
 
                 <div class="galleries">
                     <ul>

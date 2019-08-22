@@ -48,7 +48,7 @@ html, body, #root {
     flex-direction: column;
     .photo-container {
         width: 500px;
-        margin: 50px 0;
+        margin: 15px 0;
         opacity: 0;
 
         @media screen and (max-width: 1000px) {
@@ -88,4 +88,9 @@ html, body, #root {
 
 .fadein {
     animation: fadein 1s;
+}
+
+@font-face {
+    font-family: 'Sweet Buttermilk';
+    src: url('../assets/fonts/sweet_buttermilk.ttf') format("truetype");
 }
