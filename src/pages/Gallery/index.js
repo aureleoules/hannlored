@@ -24,6 +24,7 @@ class Gallery extends React.Component {
         axios.get('/gallery/' + id).then(response => {
             const gallery = response.data.payload;
             if(!gallery.photos) gallery.photos = [];
+            gallery.photos.reverse();
             this.setState({
                 ...gallery,
                 fetched: true
