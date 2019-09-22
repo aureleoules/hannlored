@@ -6,6 +6,7 @@ import {Link} from 'preact-router';
 
 import axios from 'axios';
 import Logo from '../../assets/hannlorelogo.png';
+import FacebookLogo from '../../assets/facebook.svg';
 
 class Menu extends React.Component {
     
@@ -41,6 +42,8 @@ class Menu extends React.Component {
             <div class="menu">
                 <Link class="logo" href="/">
                     <img src={Logo} width="150"/>
+                    <br/>
+                    <img width="200" src="https://files.backpulse.io/5d5db59d25644939449646b3"/>
                 </Link>
 
                 <div class="galleries">
@@ -54,7 +57,12 @@ class Menu extends React.Component {
                         ))}
                     </ul>
                 </div>
-            </div>
+                <a href="https://www.facebook.com/profile.php?id=100010261752053" target="_blank">
+                    <img style={{marginBottom: 15}} src={FacebookLogo}/>
+                </a>
+                <div>
+                </div>
+            </div> 
         );
     }
 }
