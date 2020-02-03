@@ -43,7 +43,7 @@ class Menu extends React.Component {
                 <Link class="logo" href="/">
                     <img src={Logo} width="150"/>
                     <br/>
-                    <img width="200" src="https://files.backpulse.io/5d5db59d25644939449646b3"/>
+                    <img width="200" src="https://storage.googleapis.com/files.backpulse.io/5d5db59d25644939449646b3"/>
                 </Link>
 
                 <div class="galleries">
